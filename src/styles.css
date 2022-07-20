@@ -1,4 +1,68 @@
-.App {
+body {
   font-family: sans-serif;
+}
+
+input {
+  border-radius: 16px;
+  border: none; /*枠線：なし*/
+  padding: 6px 16px; /*余白 上下 左右*/
+  outline: none; /*入力エリアにカーソルを当てた時の枠線：なし*/
+}
+
+button {
+  border-radius: 16px;
+  border: none;
+  padding: 4px 16px;
+}
+
+button:hover {
+  /*ボタンにカーソルを当てた時*/
+  background-color: #ff7fff;
+  color: #fff; /*カーソル当てたときの文字色*/
+  cursor: pointer; /*カーソルあてたとき：矢印から指さしになる*/
+}
+
+li {
+  /*リストの横に余白を持たせたい*/
+  margin-right: 8px;
+}
+
+.input-area {
+  background-color: #c1ffff;
+  width: 400px; /*横幅*/
+  height: 30px; /*高さ*/
+  padding: 8px; /*内側の余白*/
+  margin: 8px; /*外側の余白*/
+  border-radius: 8px; /*角をまるくする*/
+}
+
+.incomplete-area {
+  background-color: #c6ffe2;
+  width: 400px;
+  min-height: 200px; /*最低限の高さ*/
+  padding: 8px;
+  margin: 8px;
+  border-radius: 8px;
+}
+
+.complete-area {
+  background-color: #ffffe0;
+  width: 400px;
+  min-height: 200px;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 8px;
+}
+
+.title {
   text-align: center;
+  margin-top: 0; /*上のマージンを0にする*/
+  font-weight: bold; /*太字にする*/
+  color: #666;
+}
+
+.list-row {
+  display: flex;
+  align-items: center; /*横の中央揃え*/
+  padding-bottom: 4px; /*下側の余白*/
 }
